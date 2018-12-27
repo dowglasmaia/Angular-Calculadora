@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { CalculadoraService } from '../services'  // importo meu service (.. volta um diretorio)
+
 @Component({
   selector: 'app-calculadora',
   templateUrl: './calculadora.component.html',
@@ -7,7 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CalculadoraComponent implements OnInit {
 
-  constructor() { }
+  //injeção de depend. se da dentro do construtor
+  constructor(private calculadoraService: CalculadoraService) { }
 
   ngOnInit() {
   }
