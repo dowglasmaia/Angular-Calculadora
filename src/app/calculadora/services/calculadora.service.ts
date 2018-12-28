@@ -3,10 +3,8 @@
  * calculadora.
  * 
  * @author Dowglas Maia <dowglasmaia@live.com>
- * 
+ * @since 1.0
  */
-
-
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -56,5 +54,5 @@ export class CalculadoraService {
   	}
   	return resultado;
   }
-  
+
 }
